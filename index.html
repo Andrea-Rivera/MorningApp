@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>CLG BOILERPLATE</title>
-  </head>
-  <body>
-		<!-- your content goes here! -->
-		<script src="js/main.js"></script>
-	</body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!--Font awesome css Icons-->
+  <script src="https://kit.fontawesome.com/9dc0914edc.js" crossorigin="anonymous"></script>
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alkalami&family=Gentium+Plus:ital@1&family=Playfair+Display:ital@0;1&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+
+  <title>Good Morning Webpage</title>
+</head>
+<header>
+  <h1 onmouseover="header()">Good Morning Webpage</h1>
+</header>
+
+<body>
+  <div>
+    <article>
+
+      <section class="logo" onclick="coffee();">
+        <i class="fa fa-coffee" id="small"></i>
+        <i class="fa fa-coffee" id="medium" style="font-size:24px"></i>
+        <i class="fa fa-coffee" id="large" style="font-size:36px"></i>
+        <i class="fa fa-coffee" id="extraLarge"></i>
+      </section>
+
+      <section class="content">
+        <p id="phrase">Morning! It is a new day and a new opportunity to chase your dreams.Not
+          in the mood?<a onclick="removeQuote()"><strong> CLICK HERE </strong></a></p>
+
+        <label for="chores-select"><strong>What do you have to do today?:</strong></label>
+        <select id="chores" onchange="jsFunction(this.value)">
+          <option value="">--Please choose an option--</option>
+          <option value="Work">Work</option>
+          <option value="Study">Study</option>
+          <option value="House">House chores</option>
+          <option value="Kids">Take care of kids</option>
+          <option value="Rest">Rest</option>
+          <option value="Shopping">Go Shopping</option>
+        </select>
+        <p id="answer"></p>
+
+        <p><strong>Need an encouraging phrase to start your day?</strong> </p>
+        <button onclick="myFunction()">Yes! <i class="fa fa-smile-o"></i></button>
+        <p id="demo"></p>
+
+
+
+    </article>
+    </section>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
