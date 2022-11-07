@@ -11,15 +11,43 @@ body{
    
    
 }
-h1{
+#greeting{
     text-align: center;
-    padding: 20px;
-    font-family: 'Gentium Plus', serif;;
+    padding: 30px;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color:rgb(247, 99, 45);
+    
 }
+
+#clock{
+    border-style: double;
+    padding: 5px;
+    
+}
+span{
+    margin: 20px;;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+  }
+  
+  .item {
+    height: 20em;
+    width: 20em;
+    background-color:beige;
+    margin: 5px;
+  }
+
 article {
     background-color: beige;
     padding: 20px 40px 40px 40px;
-    margin: 20px 300px;
+    margin:30px;
     border-radius: 10px;
     box-shadow: .2em .2em .5em #999;
     text-align: left;
@@ -30,6 +58,17 @@ article {
 button{
     font-size:24px ;
     color: rgb(106, 157, 29);
+}
+
+.result {
+    font-family: 'Playfair Display', serif;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 200px;
+    width: 300px;
 }
 
 #demo{

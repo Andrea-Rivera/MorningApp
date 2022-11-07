@@ -11,48 +11,73 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Alkalami&family=Gentium+Plus:ital@1&family=Playfair+Display:ital@0;1&family=Roboto:wght@300&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Alkalami&family=Gentium+Plus:ital@1&family=Lobster&family=Playfair+Display:ital@0;1&family=Roboto:wght@300&display=swap"
     rel="stylesheet">
-
   <title>Good Morning Webpage</title>
 </head>
 <header>
-  <h1 onmouseover="header()">Good Morning Webpage</h1>
+  <div id="greeting">Hello</div>
 </header>
 
 <body>
   <div>
     <article>
+      <p id="phrase">Morning! It is a new day and a new opportunity to chase your dreams. To optimistic?<a
+          onclick="removeQuote()"> Then, <strong>CLICK HERE </strong></a></p>
+      <div class="flexbox">
+        <div class="item">
+          <section class="logo" onclick="coffee();">
+            <i class="fa fa-coffee" id="small"></i>
+            <i class="fa fa-coffee" id="medium" style="font-size:24px"></i>
+            <i class="fa fa-coffee" id="large" style="font-size:36px"></i>
+            <i class="fa fa-coffee" id="extraLarge"></i>
+          </section>
+        </div>
+        <div class="item">
+          <p><strong>The local time is:</strong><span id="clock"></span></p>
 
-      <section class="logo" onclick="coffee();">
-        <i class="fa fa-coffee" id="small"></i>
-        <i class="fa fa-coffee" id="medium" style="font-size:24px"></i>
-        <i class="fa fa-coffee" id="large" style="font-size:36px"></i>
-        <i class="fa fa-coffee" id="extraLarge"></i>
-      </section>
+        </div>
+      </div>
 
       <section class="content">
-        <p id="phrase">Morning! It is a new day and a new opportunity to chase your dreams. To optimistic?<a
-            onclick="removeQuote()"><strong> Then, CLICK HERE </strong></a></p>
 
-        <label for="chores-select"><strong>What do you have to do today?:</strong></label>
-        <select id="chores" onchange="jsFunction(this.value)">
-          <option value="">--Please choose an option--</option>
-          <option value="Work">Work</option>
-          <option value="Study">Study</option>
-          <option value="House">House chores</option>
-          <option value="Kids">Take care of kids</option>
-          <option value="Rest">Rest</option>
-          <option value="Shopping">Go Shopping</option>
-        </select>
-        <p id="answer"></p>
+        <div class="flexbox">
+          <div class="item">
+            <label for="chores-select"><strong>What do you have to do today?:</strong></label>
+          </div>
+          <div class="item">
+            <select id="chores" onchange="jsFunction(this.value)">
+              <option value="">--Please choose an option--</option>
+              <option value="Work">Work</option>
+              <option value="Study">Study</option>
+              <option value="House">House chores</option>
+              <option value="Kids">Take care of kids</option>
+              <option value="Rest">Rest</option>
+              <option value="Shopping">Go Shopping</option>
+            </select>
 
-        <p><strong>Need an encouraging phrase to start your day?</strong> </p>
-        <button onclick="myFunction()">Yes! <i class="fa fa-smile-o"></i></button>
-        <p id="demo"></p>
+            <p id="answer"></p>
+          </div>
+        </div>
 
-
-
+        <div class="flexbox">
+          <div class="item">
+            <p><strong>Still do not know what to do today? Click the button to see some suggestions:</strong></p>
+            <button id="activity_btn">Get Activity</button>
+          </div>
+          <div class="item">
+            <div class="result">Activity</div>
+          </div>
+        </div>
+        <div class="flexbox">
+          <div class="item">
+            <p><strong>Need an encouraging phrase to start your day?</strong> </p>
+            <button onclick="myFunction()">Yes! <i class="fa fa-smile-o"></i></button>
+          </div>
+          <div class="item">
+            <div id="demo" class="result">Pharase</div>
+          </div>
+        </div>
     </article>
     </section>
   </div>
