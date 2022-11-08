@@ -16,7 +16,15 @@
   <title>Good Morning Webpage</title>
 </head>
 <header>
-  <div id="greeting">Hello</div>
+  <span id="greeting">Hello</span>
+
+  <span class="logo" onclick="coffee();">
+    <i class="fa fa-coffee" id="small"></i>
+    <i class="fa fa-coffee" id="medium" style="font-size:24px"></i>
+    <i class="fa fa-coffee" id="large" style="font-size:36px"></i>
+    <i class="fa fa-coffee" id="extraLarge"></i>
+  </span>
+
 </header>
 
 <body>
@@ -25,14 +33,7 @@
       <p id="phrase">Morning! It is a new day and a new opportunity to chase your dreams. To optimistic?<a
           onclick="removeQuote()"> Then, <strong>CLICK HERE </strong></a></p>
       <div class="flexbox">
-        <div class="item">
-          <section class="logo" onclick="coffee();">
-            <i class="fa fa-coffee" id="small"></i>
-            <i class="fa fa-coffee" id="medium" style="font-size:24px"></i>
-            <i class="fa fa-coffee" id="large" style="font-size:36px"></i>
-            <i class="fa fa-coffee" id="extraLarge"></i>
-          </section>
-        </div>
+
         <div class="item">
           <p><strong>The local time is:</strong><span id="clock"></span></p>
 
@@ -66,7 +67,7 @@
             <button id="activity_btn">Get Activity</button>
           </div>
           <div class="item">
-            <div class="result">Activity</div>
+            <div id="activity_result" class="result">Activity</div>
           </div>
         </div>
         <div class="flexbox">
