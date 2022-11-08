@@ -1,4 +1,4 @@
-//Lesson 1 &2
+//Lesson 1 ,2 VARIABLES
 
 const greeting = "Hello World";
 console.log(greeting);
@@ -15,6 +15,7 @@ console.log(greetingTwo.toUpperCase());
 let message = "Today is a sunny day!";
 console.log(message.toLowerCase());
 
+//Lesson 3, 4 CONTROL FLOW AND FUNCTIONS
 function countingWords(str) {
   if (str === null || "") {
     return 0;
@@ -24,10 +25,11 @@ function countingWords(str) {
 console.log(countingWords("Andrea"));
 //console.log(str); //Error because str is a local variable.
 
-//Lesson 3
 function coffee() {
   alert("You clicked me! Ok, Let me have my coffee first.");
 }
+
+//lesson 5 Web APIs AND CONTROL FLOW
 
 setInterval(greetingFunction, 1000);
 

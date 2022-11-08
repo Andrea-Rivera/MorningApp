@@ -12,6 +12,7 @@ body{
    
 }
 #greeting{
+   
     text-align: center;
     padding: 30px;
     font-family: 'Lobster', cursive;
@@ -23,6 +24,7 @@ body{
 #clock{
     border-style: double;
     padding: 5px;
+    background-color: rgb(190, 239, 232);
     
 }
 span{
@@ -38,16 +40,18 @@ span{
   }
   
   .item {
-    height: 20em;
+    height: 12em;
     width: 20em;
-    background-color:beige;
-    margin: 5px;
+    background-color:rgb(224, 224, 129);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
   }
 
 article {
-    background-color: beige;
+    background-color: transparent;
     padding: 20px 40px 40px 40px;
-    margin:30px;
+    margin:50px;
     border-radius: 10px;
     box-shadow: .2em .2em .5em #999;
     text-align: left;
@@ -62,20 +66,21 @@ button{
 
 .result {
     font-family: 'Playfair Display', serif;
-    background-color: #fff;
+    background-color: rgb(190, 239, 232);
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px;
-    height: 200px;
+    height: 100px;
     width: 300px;
+    border-radius: 10px;
 }
 
 #demo{
     font-family: 'Playfair Display', serif;
 }
 #small{
-    color: rgb(187, 193, 86);
+    color: rgb(107, 112, 15);
 }
 #medium{
     color: rgb(231, 178, 33);
@@ -88,7 +93,15 @@ button{
     color:red;
 }
 #phrase{
+    text-align: center;
     font-family: 'Alkalami', serif;
-    color:rgb(192, 122, 30);
-    font-size: 20px;
+    color:rgb(225, 105, 25);
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#chores{
+    padding: 10px;
+    background-color:  rgb(190, 239, 232);
+    border-radius: 10px;
 }
